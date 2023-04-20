@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+    <title>Challenge ONE - Decodificador</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="https://alura.com.br"><img src="./assets/alura-icon.svg" alt="Logo Alura" /></a>
+      </header>
+
+      <main>
+        <section class="input-container">
+          <textarea class="textarea input-text" placeholder="Digite seu texto" cols="50" rows="15"></textarea>
+          <div class="instruction">
+            <img src="./assets/attention-icon.svg" alt="A round icon with '!' inside" />
+            <p>Apenas letras minúsculas e sem acento.</p>
+          </div>
+
+          <div class="buttons-container">
+            <button class="button colored encrypt">Criptografar</button>
+            <button class="button uncolored decrypt">Descriptografar</button>
+          </div>
+        </section>
+
+        <section class="output-container">
+          <figure class="show">
+            <img src="./assets/illustration.svg" alt="An illustration of a person on their knees looking at a diamond with magnifying glass" />
+            <figcaption><span>Nenhuma mensagem encontrada</span><br />Digite um texto que você deseja criptografar ou descriptografar.</figcaption>
+          </figure>
+          <textarea class="textarea output-text" cols="50" rows="15"></textarea>
+          <button class="button uncolored copy">Copiar</button>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
